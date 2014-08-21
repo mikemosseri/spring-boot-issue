@@ -94,8 +94,6 @@ public class Application {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-      System.out.println("loading username " + username);
-      System.out.println("u " + repo.findByUsername(username));
       return repo.findByUsername(username);
     }
   }
